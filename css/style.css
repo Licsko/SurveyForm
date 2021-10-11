@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: calc(8px + .5vw)
+}
+
+body {
+    background: url('../img/workspace-1280538.jpg') no-repeat fixed ;
+    background-size: cover;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    color: rgba(255, 255, 255, 1);
+    padding: 2rem;
+}
+
+.logo {
+    width: 10%;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+}
+
+.introduction {
+    width: 50vw;
+    margin: 2rem 0;
+}
+    .introduction p {
+        font-weight: 100;
+        font-size: 1rem;
+    }
+    .introduction strong {
+        font-style: italic;
+    }
+
+.form-card {
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    width: 50vw;
+    border-radius: 1rem;
+}
+
+    .form-card form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+        .form-card input,textarea {
+            width: 90%;
+            border-radius: .5rem;
+            border: none;
+            padding: .5rem
+        }
+        .form-control label {
+            font-weight: 600;
+        }
+        .form-control select {
+            width: 90%;
+            border-radius: .5rem;
+            border: none;
+            padding: .5rem;
+        }
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.checks-groups {
+    display: flex;
+    flex-direction: column;
+}
+    .checks-groups .group {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-bottom: .5rem;
+    }
+    .checks-groups .group:first-of-type {
+        margin-top: 1rem;
+    }
+    .checks-groups input{
+        width: 1rem;
+        margin-right: 1rem;
+    }
+    .checks-groups label {
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+
+button {
+    width: 90%;
+    padding: .5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border: 2px solid dodgerblue;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid #fff;
+}

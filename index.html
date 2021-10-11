@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Felmérési Űrlap</title>
+</head>
+<body>
+    <img src="img/logo.png" alt="Cég logója" class="logo">
+    <div class="introduction">
+        <h1 id="title">
+            Munkavállalói Elégedettség Felmérés
+        </h1>
+        <p id="description">
+            Ez a <strong>LOREM IPSUM</strong> vállalat munkavállalói elégedettségi felmérése, amit azért hoztunk létre, mert nekünk nemcsak a mi érdekeink, de kollégáink érdeke is számít. <br>
+            Kérjük, figyelmesen töltse ki az űrlapot.
+        </p>
+    </div>
+    <div class="form-card">
+        <form action="" id="survey-form">
+            <div class="form-control">
+                <label for="name" id="name-label">Név:</label>
+                <input type="text" name="name" id="name" placeholder="Nyal Tamás" required>
+            </div>
+            <div class="form-control">
+                <label for="email" id="email-label">E-mail cím:</label>
+                <input type="email" name="email" id="email" placeholder="nyaltamas@pelda.hu" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            <div class="form-control">
+                <label for="number" id="number-label">Azonosítószám (6 számjegy)</label>
+                <input type="number" name="id-number" id="number" placeholder="123456 (példa)" pattern="[0-9]{6}" title="Adja meg 6 számjegyű azonosítóját." min="100000" max="999999">
+            </div>
+            <div class="form-control">
+                <label for="dropdown" id="number-label">Jelentkezés előtt honnan tájékozódott az álláslehetőségről?</label>
+                <select name="" id="dropdown">
+                    <option value="ujsag">Újság</option>
+                    <option value="kozossegi-media">Közösségi Média</option>
+                    <option value="ismeros">Ismerős által</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>Hogyan jellemezné a munkával való elégedettségének általános szintjét?</label>
+                <div class="checks-groups">
+                    <div class="group">
+                        <input type="radio" name="satisfaction" id="very-satisfied"  value="very-satisfied">
+                        <label for="very-satisfied ">Nagyon elégedett</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="satisfaction" id="little-satisfied" value="little-satisfied">
+                        <label for="little-satisfied ">Kissé elégedett</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="satisfaction" id="neutral" value="neutral">
+                        <label for="neutral">Semleges</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="satisfaction" id="little-dissatisfied" value="little-dissatisfied">
+                        <label for="little-dissatisfied ">Kissé elégedetlen</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="satisfaction" id="very-dissatisfied" value="very-dissatisfied">
+                        <label for="very-dissatisfied ">Nagyon elégedetlen</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>Mit szeret cégünkben?</label>
+                <div class="checks-groups">
+                    <div class="group">
+                        <input type="checkbox" name="free-coffees" value="free-coffees" id="coffees">
+                        <label for="coffees">Ingyen kávé</label>
+                    </div>
+                    <div class="group">
+                        <input type="checkbox" name="free-courses" value="free-courses" id="courses">
+                        <label for="courses">Tovább képzések</label>
+                    </div>
+                    <div class="group">
+                        <input type="checkbox" name="monthly-teambuildings" value="monthly-teambuildings" id="teambuildings">
+                        <label for="teambuildings">Havi csapatépítő tréningek</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>Úgy érzi, megbecsülik a munkahelyén?</label>
+                <div class="checks-groups">
+                    <div class="group">
+                        <input type="radio" name="appreciation" id="yes-appreciation"  value="yes-appreciation">
+                        <label for="yes-appreciation">Igen</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="appreciation" id="no-appreciation" value="no-appreciation">
+                        <label for="no-appreciation">Nem</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>Megvannak-e a szükséges erőforrások a munkájának megfelelő elvégzéséhez?</label>
+                <div class="checks-groups">
+                    <div class="group">
+                        <input type="radio" name="resources" id="yes-resources" value="yes-resources">
+                        <label for="yes-resources">Igen</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="resources" id="no-resources" value="no-resources">
+                        <label for="no-resources">Nem</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label>A munkája stresszt vagy szorongást okoz Önnek?</label>
+                <div class="checks-groups">
+                    <div class="group">
+                        <input type="radio" name="stress" id="yes-stressed" value="yes-stressed">
+                        <label for="yes-stressed">Igen</label>
+                    </div>
+                    <div class="group">
+                        <input type="radio" name="stress" id="no-stressed" value="no-stressed">
+                        <label for="no-stressed">Nem</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="comment">Ha igen, kérjük, magyarázza el </label>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ide írd ..."></textarea>
+            </div>
+            <div class="form-control">
+                <button type="submit" id="submit">KÜLDÉS</button>
+            </div>
+        </form>
+    </div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
